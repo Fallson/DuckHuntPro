@@ -45,8 +45,11 @@ static DHGameData *_sharedDHGameData=nil;
         [self loadMusics];
         
         self.cur_game_mode = TIME_MODE;
-        _cur_game_ori_offset.dw = 0;
-        _cur_game_ori_offset.dh = 0;
+        _cur_game_ori_offset.scale = 0.;
+        _cur_game_ori_offset.dw = 0.;
+        _cur_game_ori_offset.dh = 0.;
+        _cur_game_ori_offset.width = 0.;
+        _cur_game_ori_offset.height = 0.;
         self.cur_game_score = 0;
         _cur_game_hit.duck_hit = 0;
         _cur_game_hit.bird_hit = 0;
@@ -177,6 +180,15 @@ static DHGameData *_sharedDHGameData=nil;
     NSUserDefaults *settings = [NSUserDefaults standardUserDefaults];
     [settings setObject: [NSNumber numberWithInt:v] forKey:@"gameMusic"];
     [settings synchronize];
+}
+
+-(CGPoint)getPos:(float)x and:(float)y
+{
+    CGPoint pnt;
+    pnt.x = _cur_game_ori_offset.width*x - _cur_game_ori_offset.dw;
+    pnt.y = _cur_game_ori_offset.height*y - _cur_game_ori_offset.dh;
+    
+    return pnt;
 }
 
 @end

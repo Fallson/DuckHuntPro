@@ -65,7 +65,7 @@ static NSString* duck_files[]={
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile: [NSString stringWithFormat:@"%@.plist", duck_files[self.duck_type]]];
         self.duck_spriteSheet = [CCSpriteBatchNode batchNodeWithFile:[NSString stringWithFormat:@"%@.png", duck_files[self.duck_type]]];
         self.duck = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"%@_1.png", duck_files[self.duck_type]]];
-        self.duck.scale = 0.5*CC_CONTENT_SCALE_FACTOR();
+        self.duck.scale = 0.5*CC_CONTENT_SCALE_FACTOR()*0.5;
         _duck_size.width = self.duck.contentSize.width * self.duck.scaleX;
         _duck_size.height = self.duck.contentSize.height * self.duck.scaleY;
         self.duck_pilot = [[DHPilotManager sharedDHPilotManager] createPilot:DUCK_NORMAL andWinRect:_winRect andObjSz:_duck_size andGroupID:0];

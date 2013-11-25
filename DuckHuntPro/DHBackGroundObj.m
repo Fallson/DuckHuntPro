@@ -15,7 +15,10 @@
 #import "DHGameChapter.h"
 
 #define CLOUD_MV_STEP    2
+#define CLOUD_Y_POS      0.8
 #define SMOKE_SPRITE_NUM 5
+#define SMOKE_X_POS (22.2/26.0)
+#define SMOKE_Y_POS (7.8/14.5)
 
 @interface DHBackGroundObj()
 {
@@ -57,7 +60,7 @@
         CGPoint ori = rect.origin;
         
         self.bg_sky = [CCSprite spriteWithFile: @"bg_sky.png"];
-        float scale_r = sz.height/self.bg_sky.contentSize.height;
+        float scale_r = 1.0 / [DHGameData sharedDHGameData].cur_game_ori_offset.scale;
         //        NSLog(@"sz(%f,%f) and sky(%f,%f), scale_r is: %f", sz.width, sz.height,
         //              self.bg_sky.contentSize.width, self.bg_sky.contentSize.height ,scale_r);
         self.bg_sky.scale = scale_r;
@@ -78,14 +81,16 @@
         
         self.bg_cloud = [CCSprite spriteWithFile: @"Cloud.png"];
         self.bg_cloud.scale = 0.25*CC_CONTENT_SCALE_FACTOR()*0.5;
-        self.bg_cloud.position = ccp( ori.x, ori.y + sz.height*0.78 );
+        self.bg_cloud.position = ccp( ori.x, ori.y + [[DHGameData sharedDHGameData] getPos:0 and:CLOUD_Y_POS].y );
         self.bg_cloud.zOrder = BG_CLOUD_Z;
         
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"sky_smoke.plist"];
         self.smoke_spriteSheet = [CCSpriteBatchNode batchNodeWithFile:@"sky_smoke.png"];
         self.smoke = [CCSprite spriteWithSpriteFrameName:@"sky_smoke_1.png"];
-        self.smoke.position = ccp(ori.x + sz.width*0.850, ori.y + sz.height*0.631);
+        CGPoint smoke_pos = [[DHGameData sharedDHGameData] getPos:SMOKE_X_POS and:SMOKE_Y_POS];
         self.smoke.scale = 0.5*CC_CONTENT_SCALE_FACTOR()*0.5;
+        self.smoke.position = ccp(ori.x + smoke_pos.x,
+                                  ori.y + smoke_pos.y + self.smoke.scale*self.smoke.contentSize.height/2);
         self.smoke.zOrder = BG_SMOKE_Z;
         _smoke_idx = 0;
         [self.smoke_spriteSheet addChild:self.smoke];
@@ -164,9 +169,9 @@
     //cloud animation
     CGPoint cur = self.bg_cloud.position;
     cur.x += CLOUD_MV_STEP;
-    if( cur.x > _winRect.size.width + self.bg_cloud.contentSize.width/2 )
+    if( cur.x > _winRect.size.width + self.bg_cloud.scale*self.bg_cloud.contentSize.width/2 )
     {
-        cur.x = -self.bg_cloud.contentSize.width/2;
+        cur.x = -(self.bg_cloud.scale * self.bg_cloud.contentSize.width/2);
     }
     self.bg_cloud.position = cur;
 }

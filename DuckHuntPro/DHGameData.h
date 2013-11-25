@@ -18,8 +18,11 @@ typedef struct GameHit_
 
 typedef struct GameOriOffset_
 {
-    int dw;
-    int dh;
+    double scale;
+    float dw;
+    float dh;
+    float width;
+    float height;
 }GameOriOffset;
 
 @interface DHGameData : NSObject
@@ -42,5 +45,5 @@ typedef struct GameOriOffset_
 -(void)addScore:(int)sc gameMode:(enum GAME_MODE)game_mode;
 -(void)addBGMusic:(int)v;
 -(void)addGameMusic:(int)v;
-
+-(CGPoint)getPos:(float)x and:(float)y;
 @end

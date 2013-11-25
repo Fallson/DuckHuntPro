@@ -11,6 +11,7 @@
 #import "DHGameSplashLayer.h"
 #import "DHGameMenuLayer.h"
 #import "SimpleAudioEngine.h"
+#import "DHGameData.h"
 
 #pragma mark - DHGameSplashLayer
 
@@ -41,8 +42,26 @@
 		// ask director for the window size
 		CGSize size = [[CCDirector sharedDirector] winSize];
 
+        // store the relationship of background size vs window size
 		CCSprite *background = [CCSprite spriteWithFile: @"bg_sky.png"];
-		
+		double width_ratio = background.contentSize.width / size.width;
+        double height_ratio = background.contentSize.height / size.height;
+        
+        GameOriOffset off;
+        if( height_ratio < width_ratio )
+        {
+            off.scale = height_ratio;
+        }
+        else
+        {
+            off.scale = width_ratio;
+        }
+        off.dw = (background.contentSize.width/off.scale - size.width)/2;
+        off.dh = (background.contentSize.height/off.scale - size.height)/2;
+        off.height = background.contentSize.height/off.scale;
+        off.width = background.contentSize.width/off.scale;
+        [DHGameData sharedDHGameData].cur_game_ori_offset = off;
+        
 		if( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ) {
 			//background = [CCSprite spriteWithFile:@"Default.png"];
 			//background.rotation = 90;
@@ -52,8 +71,6 @@
 //      background = [CCSprite spriteWithFile:@"SplashScreen.png"];
 //		background.position = ccp(size.width/2, size.height/2);
 //      background.scale *= CC_CONTENT_SCALE_FACTOR();
-        
-		// add the label as a child to this Layer
 //		[self addChild: background];
         
         //preload sound

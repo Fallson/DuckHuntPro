@@ -60,7 +60,7 @@
         menuitem_freemode.position = ccp(ori.x + sz.width*0.2, ori.y + sz.height*0.8);
         menuitem_freemode.scale *= CC_CONTENT_SCALE_FACTOR()*0.5;
         NSString* freemode_str = [NSString stringWithFormat:@"Free Mode"];
-        self.freemode_label = [DHLabel labelWithString:freemode_str fontName:DHLABEL_FONT fontSize:20];
+        self.freemode_label = [DHLabel labelWithString:freemode_str fontName:DHLABEL_FONT fontSize:10];
         self.freemode_label.color=ccBLUE;
         self.freemode_label.position = menuitem_freemode.position;
         [self.freemode_label setAnchorPoint: ccp(0.5f, 0.5f)];
@@ -72,7 +72,7 @@
         menuitem_timemode.position = ccp(ori.x + sz.width*0.35, ori.y + sz.height*0.6);
         menuitem_timemode.scale *= CC_CONTENT_SCALE_FACTOR()*0.5;
         NSString* timemode_str = [NSString stringWithFormat:@"Time Mode"];
-        self.timemode_label = [DHLabel labelWithString:timemode_str fontName:DHLABEL_FONT fontSize:20];
+        self.timemode_label = [DHLabel labelWithString:timemode_str fontName:DHLABEL_FONT fontSize:10];
         self.timemode_label.color=ccBLUE;
         self.timemode_label.position = menuitem_timemode.position;
         [self.timemode_label setAnchorPoint: ccp(0.5f, 0.5f)];
@@ -83,7 +83,7 @@
         menuitem_option.position = ccp(ori.x + sz.width*0.6, ori.y + sz.height*0.6);
         menuitem_option.scale *= CC_CONTENT_SCALE_FACTOR()*0.5;
         NSString* option_str = [NSString stringWithFormat:@"Game Option"];
-        self.option_label = [DHLabel labelWithString:option_str fontName:DHLABEL_FONT fontSize:20];
+        self.option_label = [DHLabel labelWithString:option_str fontName:DHLABEL_FONT fontSize:10];
         self.option_label.color=ccBLUE;
         self.option_label.position = menuitem_option.position;
         [self.option_label setAnchorPoint: ccp(0.5f, 0.5f)];
@@ -94,7 +94,7 @@
         menuitem_scorelist.position = ccp(ori.x + sz.width*0.8, ori.y + sz.height*0.8);
         menuitem_scorelist.scale *= CC_CONTENT_SCALE_FACTOR()*0.5;
         NSString* scorelist_str = [NSString stringWithFormat:@"Score List"];
-        self.scorelist_label = [DHLabel labelWithString:scorelist_str fontName:DHLABEL_FONT fontSize:20];
+        self.scorelist_label = [DHLabel labelWithString:scorelist_str fontName:DHLABEL_FONT fontSize:10];
         self.scorelist_label.color=ccBLUE;
         self.scorelist_label.position = menuitem_scorelist.position;
         [self.scorelist_label setAnchorPoint: ccp(0.5f, 0.5f)];
