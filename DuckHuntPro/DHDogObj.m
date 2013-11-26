@@ -48,7 +48,7 @@
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"dog.plist"];
         self.dog_spriteSheet = [CCSpriteBatchNode batchNodeWithFile:@"dog.png"];
         self.dog = [CCSprite spriteWithSpriteFrameName:@"dog_1.png"];
-        self.dog.scale = 0.75*CC_CONTENT_SCALE_FACTOR();
+        self.dog.scale = 0.75*CC_CONTENT_SCALE_FACTOR()*0.5;
         _dog_size.width = self.dog.contentSize.width * self.dog.scaleX;
         _dog_size.height = self.dog.contentSize.height * self.dog.scaleY;
 

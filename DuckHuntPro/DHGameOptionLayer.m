@@ -102,11 +102,11 @@
     {
         mi_bgMusic = [CCMenuItemToggle itemWithTarget:self selector:@selector(bgMusicPressed:) items:_mi_bgMusicOff, _mi_bgMusicOn, nil];
     }
-    mi_bgMusic.scale *= 0.5*CC_CONTENT_SCALE_FACTOR();
+    mi_bgMusic.scale *= 0.5*CC_CONTENT_SCALE_FACTOR()*0.5;
     mi_bgMusic.position = ccp(_bgRect.origin.x + _bgRect.size.width*0.3, _bgRect.origin.y + 0.6*_bgRect.size.height);
     
     NSString* bgMusic_str = [NSString stringWithFormat:@"    BackGround Sound"];
-    DHLabel* bgMusic_label = [DHLabel labelWithString:bgMusic_str fontName:DHLABEL_FONT fontSize:24];
+    DHLabel* bgMusic_label = [DHLabel labelWithString:bgMusic_str fontName:DHLABEL_FONT fontSize:12];
     bgMusic_label.color=ccYELLOW;
     bgMusic_label.position = ccp(_bgRect.origin.x + _bgRect.size.width*0.3, _bgRect.origin.y + 0.6*_bgRect.size.height);
     [bgMusic_label setAnchorPoint: ccp(0, 0.5f)];
@@ -123,11 +123,11 @@
     {
         mi_gameMusic = [CCMenuItemToggle itemWithTarget:self selector:@selector(gameMusicPressed:) items:_mi_gameMusicOff, _mi_gameMusicOn, nil];
     }
-    mi_gameMusic.scale *= 0.5*CC_CONTENT_SCALE_FACTOR();
+    mi_gameMusic.scale *= 0.5*CC_CONTENT_SCALE_FACTOR()*0.5;
     mi_gameMusic.position = ccp(_bgRect.origin.x + _bgRect.size.width*0.3, _bgRect.origin.y + 0.5*_bgRect.size.height);
    
     NSString* gameMusic_str = [NSString stringWithFormat:@"    Game Sound"];
-    DHLabel* gameMusic_label = [DHLabel labelWithString:gameMusic_str fontName:DHLABEL_FONT fontSize:24];
+    DHLabel* gameMusic_label = [DHLabel labelWithString:gameMusic_str fontName:DHLABEL_FONT fontSize:12];
     gameMusic_label.color=ccYELLOW;
     gameMusic_label.position = ccp(_bgRect.origin.x + _bgRect.size.width*0.3, _bgRect.origin.y + 0.5*_bgRect.size.height);
     [gameMusic_label setAnchorPoint: ccp(0, 0.5f)];
@@ -190,7 +190,7 @@
 -(void)initMenu
 {
     NSString* return_str = [NSString stringWithFormat:@"Return"];
-    DHLabel* return_label = [DHLabel labelWithString:return_str fontName:DHLABEL_FONT fontSize:20];
+    DHLabel* return_label = [DHLabel labelWithString:return_str fontName:DHLABEL_FONT fontSize:10];
     return_label.color=ccBLUE;
     return_label.position = ccp(_bgRect.origin.x + _bgRect.size.width*0.5, _bgRect.origin.y + 0.3*_bgRect.size.height);
     [return_label setAnchorPoint: ccp(0.5f, 0.5f)];
@@ -198,7 +198,7 @@
     CCMenuItem *menuitem_return = [CCMenuItemImage
                                    itemWithNormalImage:@"MenuItem.png" selectedImage:@"MenuItem_pressed.png"
                                    target:self selector:@selector(ReturnMenuPressed:)];
-    menuitem_return.scale *= CC_CONTENT_SCALE_FACTOR();
+    menuitem_return.scale *= CC_CONTENT_SCALE_FACTOR()*0.5;
     menuitem_return.position = return_label.position;
     
     CCMenu* main_menu = [CCMenu menuWithItems:menuitem_return, nil];

@@ -89,7 +89,7 @@
     int miss_num = [DHGameData sharedDHGameData].cur_game_miss;
     
     NSString* str = [NSString stringWithFormat:@"Chapter Over\n Current Score : %d and Hit Rate: %d%%", cur_game_score, hit_num*100/(hit_num+miss_num)];
-    DHLabel* lable = [DHLabel labelWithString:str fontName:DHLABEL_FONT fontSize:24];
+    DHLabel* lable = [DHLabel labelWithString:str fontName:DHLABEL_FONT fontSize:12];
     lable.color = ccDH;
     lable.position = ccp(_bgRect.origin.x + _bgRect.size.width*0.5, _bgRect.origin.y + 0.9*_bgRect.size.height);
     [lable setAnchorPoint: ccp(0.5f, 0.5f)];
@@ -112,7 +112,7 @@
 -(void)initMenu
 {
     NSString* return_str = [NSString stringWithFormat:@"Next Chapter"];
-    DHLabel* return_label = [DHLabel labelWithString:return_str fontName:DHLABEL_FONT fontSize:20];
+    DHLabel* return_label = [DHLabel labelWithString:return_str fontName:DHLABEL_FONT fontSize:10];
     return_label.color=ccBLUE;
     return_label.position = ccp(_bgRect.origin.x + _bgRect.size.width*0.5, _bgRect.origin.y + 0.3*_bgRect.size.height);
     [return_label setAnchorPoint: ccp(0.5f, 0.5f)];
@@ -120,7 +120,7 @@
     CCMenuItem *menuitem_return = [CCMenuItemImage
                                    itemWithNormalImage:@"MenuItem.png" selectedImage:@"MenuItem_pressed.png"
                                    target:self selector:@selector(ReturnMenuPressed:)];
-    menuitem_return.scale *= CC_CONTENT_SCALE_FACTOR();
+    menuitem_return.scale *= CC_CONTENT_SCALE_FACTOR()*0.5;
     menuitem_return.position = return_label.position;
     
     CCMenu* main_menu = [CCMenu menuWithItems:menuitem_return,nil];

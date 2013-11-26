@@ -92,7 +92,7 @@
                                     itemWithNormalImage:@"continue.png" selectedImage:@"continue.png"
                                     target:self selector:@selector(ContinueMenuPressed:)];
         menuitem_con.position = ccp(rect.origin.x + rect.size.width*0.85, rect.origin.y + rect.size.height*0.1);
-        menuitem_con.scale *= (0.5*CC_CONTENT_SCALE_FACTOR());
+        menuitem_con.scale *= (0.5*CC_CONTENT_SCALE_FACTOR()*0.5);
         
         CCMenu* main_menu = [CCMenu menuWithItems:menuitem_con, nil];
         main_menu.position = CGPointZero;

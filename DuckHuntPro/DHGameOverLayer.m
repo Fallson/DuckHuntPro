@@ -89,7 +89,7 @@
     [[DHGameData sharedDHGameData] addScore: cur_game_score gameMode:cur_game_mode];
     
     NSString* str = [NSString stringWithFormat:@"Game Over\n Your Score : %d", cur_game_score];
-    DHLabel* lable = [DHLabel labelWithString:str fontName:DHLABEL_FONT fontSize:24];
+    DHLabel* lable = [DHLabel labelWithString:str fontName:DHLABEL_FONT fontSize:12];
     lable.color = ccDH;
     lable.position = ccp(_bgRect.origin.x + _bgRect.size.width*0.5, _bgRect.origin.y + 0.9*_bgRect.size.height);
     [lable setAnchorPoint: ccp(0.5f, 0.5f)];
@@ -127,21 +127,21 @@
     CCMenuItem *menuitem_twitter = [CCMenuItemImage
                                    itemWithNormalImage:@"twitter.png" selectedImage:@"twitter.png"
                                    target:self selector:@selector(TwitterMenuPressed:)];
-    menuitem_twitter.scale *= (0.25 * CC_CONTENT_SCALE_FACTOR());
+    menuitem_twitter.scale *= (0.25 * CC_CONTENT_SCALE_FACTOR()*0.5);
     menuitem_twitter.position = ccp(_bgRect.origin.x + _bgRect.size.width*0.4, _bgRect.origin.y + 0.3*_bgRect.size.height);
     
     //facebook
     CCMenuItem *menuitem_facebook = [CCMenuItemImage
                                     itemWithNormalImage:@"facebook.png" selectedImage:@"facebook.png"
                                     target:self selector:@selector(FacebookMenuPressed:)];
-    menuitem_facebook.scale *= (0.25 * CC_CONTENT_SCALE_FACTOR());
+    menuitem_facebook.scale *= (0.25 * CC_CONTENT_SCALE_FACTOR()*0.5);
     menuitem_facebook.position = ccp(_bgRect.origin.x + _bgRect.size.width*0.5, _bgRect.origin.y + 0.3*_bgRect.size.height);
     
     //weibo
     CCMenuItem *menuitem_weibo = [CCMenuItemImage
                                     itemWithNormalImage:@"weibo.png" selectedImage:@"weibo.png"
                                     target:self selector:@selector(WeiboMenuPressed:)];
-    menuitem_weibo.scale *= (0.25 * CC_CONTENT_SCALE_FACTOR());
+    menuitem_weibo.scale *= (0.25 * CC_CONTENT_SCALE_FACTOR()*0.5);
     menuitem_weibo.position = ccp(_bgRect.origin.x + _bgRect.size.width*0.6, _bgRect.origin.y + 0.3*_bgRect.size.height);
     
     

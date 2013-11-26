@@ -47,26 +47,26 @@
         self.hit_count = 0;
 
         NSString* highest_score_str = [NSString stringWithFormat:@"highest score: %d", self.highest_score];
-        self.highest_score_label = [DHLabel labelWithString:highest_score_str fontName:DHLABEL_FONT fontSize:24];
+        self.highest_score_label = [DHLabel labelWithString:highest_score_str fontName:DHLABEL_FONT fontSize:12];
         self.highest_score_label.color=ccDH;
         self.highest_score_label.position = ccp(_winRect.origin.x + 10, _winRect.origin.y + 0.5*_winRect.size.height);
         [self.highest_score_label setAnchorPoint: ccp(0, 0.5f)];
         
         NSString* score_str = [NSString stringWithFormat:@"current score: %d", self.score];
-        self.score_label = [DHLabel labelWithString:score_str fontName:DHLABEL_FONT fontSize:24];
+        self.score_label = [DHLabel labelWithString:score_str fontName:DHLABEL_FONT fontSize:12];
         self.score_label.color=ccDH;
         self.score_label.position = ccp(_winRect.origin.x + 10, _winRect.origin.y);
         [self.score_label setAnchorPoint: ccp(0, 0.5f)];
         
 
         NSString* left_duck_str = [NSString stringWithFormat:@"left duck:"];
-        self.left_duck_label = [DHLabel labelWithString:left_duck_str fontName:DHLABEL_FONT fontSize:24];
+        self.left_duck_label = [DHLabel labelWithString:left_duck_str fontName:DHLABEL_FONT fontSize:12];
         self.left_duck_label.color=ccDH;
         self.left_duck_label.position = ccp(_winRect.origin.x + 0.8*_winRect.size.width, _winRect.origin.y + 0.5*_winRect.size.height);
         [self.left_duck_label setAnchorPoint: ccp(0, 0.5f)];
         
         NSString* hit_count_str = [NSString stringWithFormat:@"hit count:   %d", self.hit_count];
-        self.hit_count_label = [DHLabel labelWithString:hit_count_str fontName:DHLABEL_FONT fontSize:24];
+        self.hit_count_label = [DHLabel labelWithString:hit_count_str fontName:DHLABEL_FONT fontSize:12];
         self.hit_count_label.color=ccDH;
         self.hit_count_label.position = ccp(_winRect.origin.x + 0.8*_winRect.size.width, _winRect.origin.y);
         [self.hit_count_label setAnchorPoint: ccp(0, 0.5f)];
@@ -84,7 +84,7 @@
     for( int i = 0; i < FREEMODE_TOTAL_DUCK; i++ )
     {
         CCSprite* sprite1 = [CCSprite spriteWithFile:@"duck_icon.png"];
-        sprite1.scale *= (0.2 * CC_CONTENT_SCALE_FACTOR());
+        sprite1.scale *= (0.2 * CC_CONTENT_SCALE_FACTOR()*0.5);
         sprite1.position = ccp(pos.x + i*sprite1.contentSize.width*sprite1.scale + 10, pos.y);
         sprite1.anchorPoint = ccp(0.0f, 0.5f);
         [self.left_duck_sprites addObject:sprite1];

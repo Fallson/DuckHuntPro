@@ -181,7 +181,7 @@
                                   itemWithNormalImage:@"Pause.png" selectedImage:@"Pause.png"
                                   target:self selector:@selector(PauseMenuPressed:)];
     menuitem_pause.position = ccp(rect.origin.x + rect.size.width*0.85, rect.origin.y + rect.size.height*0.1);
-    menuitem_pause.scale *= (0.5*CC_CONTENT_SCALE_FACTOR());
+    menuitem_pause.scale *= (0.5*CC_CONTENT_SCALE_FACTOR()*0.5);
     
     CCMenu* main_menu = [CCMenu menuWithItems:menuitem_pause, nil];
     main_menu.position = CGPointZero;

@@ -32,7 +32,7 @@
         self.visible = true;
         
         NSString* score_str = [NSString stringWithFormat:@"+%d", score];
-        self.score_label = [DHLabel labelWithString:score_str fontName:DHLABEL_FONT fontSize:20];
+        self.score_label = [DHLabel labelWithString:score_str fontName:DHLABEL_FONT fontSize:10];
         self.score_label.color = ccORANGE;
         self.score_label.position = pos;
         [self.score_label setAnchorPoint: ccp(0.5f, 0.0f)];
