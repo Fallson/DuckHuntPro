@@ -19,7 +19,6 @@
 		D2BF496F1837469F00CD5A5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF496E1837469F00CD5A5F /* Foundation.framework */; };
 		D2BF49711837469F00CD5A5F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF49701837469F00CD5A5F /* CoreGraphics.framework */; };
 		D2BF49731837469F00CD5A5F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF49721837469F00CD5A5F /* CoreText.framework */; };
-		D2BF49751837469F00CD5A5F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF49741837469F00CD5A5F /* GameKit.framework */; };
 		D2BF49791837469F00CD5A5F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D2BF49781837469F00CD5A5F /* Default.png */; };
 		D2BF497D1837469F00CD5A5F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2BF497C1837469F00CD5A5F /* Default-568h@2x.png */; };
 		D2BF497F1837469F00CD5A5F /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D2BF497E1837469F00CD5A5F /* Default-Landscape~ipad.png */; };
@@ -231,7 +230,6 @@
 		D2BF496E1837469F00CD5A5F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2BF49701837469F00CD5A5F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D2BF49721837469F00CD5A5F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		D2BF49741837469F00CD5A5F /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		D2BF49781837469F00CD5A5F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
 		D2BF497C1837469F00CD5A5F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
 		D2BF497E1837469F00CD5A5F /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "Resources/Default-Landscape~ipad.png"; sourceTree = "<group>"; };
@@ -612,7 +610,6 @@
 				D2BF49651837469F00CD5A5F /* OpenGLES.framework in Frameworks */,
 				D2BF496F1837469F00CD5A5F /* Foundation.framework in Frameworks */,
 				D2BF49691837469F00CD5A5F /* AudioToolbox.framework in Frameworks */,
-				D2BF49751837469F00CD5A5F /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,7 +646,6 @@
 				D2BF496E1837469F00CD5A5F /* Foundation.framework */,
 				D2BF49701837469F00CD5A5F /* CoreGraphics.framework */,
 				D2BF49721837469F00CD5A5F /* CoreText.framework */,
-				D2BF49741837469F00CD5A5F /* GameKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1193,6 +1189,11 @@
 				TargetAttributes = {
 					D2BF495E1837469F00CD5A5F = {
 						DevelopmentTeam = 3D44ZQTQDW;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
