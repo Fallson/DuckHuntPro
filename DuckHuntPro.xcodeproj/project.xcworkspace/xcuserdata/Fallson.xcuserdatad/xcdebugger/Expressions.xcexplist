@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[DHBackGroundObj initWithWinRect:andDucks:]:DHBackGroundObj.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.bg_cloud.position">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[DHGameSplashLayer init]:DHGameSplashLayer.m">
          <PersistentStrings>
             <PersistentString

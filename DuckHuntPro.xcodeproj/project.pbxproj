@@ -9,6 +9,28 @@
 /* Begin PBXBuildFile section */
 		D220D2491844D4B500F683D7 /* icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = D220D2481844D4B500F683D7 /* icon-120.png */; };
 		D220D24B1844DA4400F683D7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D220D24A1844DA4400F683D7 /* Default@2x.png */; };
+		D2280B9818BDDE77005CE1E5 /* DHBackGroundObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280B8B18BDDE77005CE1E5 /* DHBackGroundObj.m */; };
+		D2280B9918BDDE77005CE1E5 /* DHFloatingScoreObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280B8D18BDDE77005CE1E5 /* DHFloatingScoreObj.m */; };
+		D2280B9A18BDDE77005CE1E5 /* DHFreeModePannelObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280B8F18BDDE77005CE1E5 /* DHFreeModePannelObj.m */; };
+		D2280B9B18BDDE77005CE1E5 /* DHIntroPannelObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280B9118BDDE77005CE1E5 /* DHIntroPannelObj.m */; };
+		D2280B9C18BDDE77005CE1E5 /* DHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280B9318BDDE77005CE1E5 /* DHLabel.m */; };
+		D2280B9D18BDDE77005CE1E5 /* DHMenuObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280B9518BDDE77005CE1E5 /* DHMenuObj.m */; };
+		D2280B9E18BDDE77005CE1E5 /* DHTimeModePannelObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280B9718BDDE77005CE1E5 /* DHTimeModePannelObj.m */; };
+		D2280BAF18BDDE9D005CE1E5 /* DHFreeModeContinueLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BA018BDDE9D005CE1E5 /* DHFreeModeContinueLayer.m */; };
+		D2280BB018BDDE9D005CE1E5 /* DHFreeModeGameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BA218BDDE9D005CE1E5 /* DHFreeModeGameLayer.m */; };
+		D2280BB118BDDE9D005CE1E5 /* DHGameMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BA418BDDE9D005CE1E5 /* DHGameMenuLayer.m */; };
+		D2280BB218BDDE9D005CE1E5 /* DHGameOptionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BA618BDDE9D005CE1E5 /* DHGameOptionLayer.m */; };
+		D2280BB318BDDE9D005CE1E5 /* DHGameOverLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BA818BDDE9D005CE1E5 /* DHGameOverLayer.m */; };
+		D2280BB418BDDE9D005CE1E5 /* DHGameScoreListLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BAA18BDDE9D005CE1E5 /* DHGameScoreListLayer.m */; };
+		D2280BB518BDDE9D005CE1E5 /* DHGameSplashLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BAC18BDDE9D005CE1E5 /* DHGameSplashLayer.m */; };
+		D2280BB618BDDE9D005CE1E5 /* DHTimeModeGameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BAE18BDDE9D005CE1E5 /* DHTimeModeGameLayer.m */; };
+		D2280BC718BDDEB3005CE1E5 /* DHDogObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BB918BDDEB3005CE1E5 /* DHDogObj.m */; };
+		D2280BC818BDDEB3005CE1E5 /* DHDuckObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BBB18BDDEB3005CE1E5 /* DHDuckObj.m */; };
+		D2280BC918BDDEB3005CE1E5 /* DHGameChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BBD18BDDEB3005CE1E5 /* DHGameChapter.m */; };
+		D2280BCA18BDDEB3005CE1E5 /* DHGameData.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BBF18BDDEB3005CE1E5 /* DHGameData.m */; };
+		D2280BCB18BDDEB3005CE1E5 /* DHPilot.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BC118BDDEB3005CE1E5 /* DHPilot.m */; };
+		D2280BCC18BDDEB3005CE1E5 /* DHPilotManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BC318BDDEB3005CE1E5 /* DHPilotManager.m */; };
+		D2280BCD18BDDEB3005CE1E5 /* DHScore.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BC518BDDEB3005CE1E5 /* DHScore.m */; };
 		D294CCAA18438A61002A4645 /* Snap ITC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D294CCA918438A61002A4645 /* Snap ITC.ttf */; };
 		D2BF49631837469F00CD5A5F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF49621837469F00CD5A5F /* QuartzCore.framework */; };
 		D2BF49651837469F00CD5A5F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF49641837469F00CD5A5F /* OpenGLES.framework */; };
@@ -191,34 +213,58 @@
 		D2BF4B7A1837475F00CD5A5F /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = D2BF4B461837475F00CD5A5F /* SplashScreen.png */; };
 		D2BF4B7B1837475F00CD5A5F /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = D2BF4B471837475F00CD5A5F /* twitter.png */; };
 		D2BF4B7C1837475F00CD5A5F /* weibo.png in Resources */ = {isa = PBXBuildFile; fileRef = D2BF4B481837475F00CD5A5F /* weibo.png */; };
-		D2BF4BAB1837476D00CD5A5F /* DHBackGroundObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B7E1837476D00CD5A5F /* DHBackGroundObj.m */; };
-		D2BF4BAC1837476D00CD5A5F /* DHDogObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B811837476D00CD5A5F /* DHDogObj.m */; };
-		D2BF4BAD1837476D00CD5A5F /* DHDuckObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B831837476D00CD5A5F /* DHDuckObj.m */; };
-		D2BF4BAE1837476D00CD5A5F /* DHFloatingScoreObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B851837476D00CD5A5F /* DHFloatingScoreObj.m */; };
-		D2BF4BAF1837476D00CD5A5F /* DHFreeModeContinueLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B871837476D00CD5A5F /* DHFreeModeContinueLayer.m */; };
-		D2BF4BB01837476D00CD5A5F /* DHFreeModeGameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B891837476D00CD5A5F /* DHFreeModeGameLayer.m */; };
-		D2BF4BB11837476D00CD5A5F /* DHFreeModePannelObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B8B1837476D00CD5A5F /* DHFreeModePannelObj.m */; };
-		D2BF4BB21837476D00CD5A5F /* DHGameChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B8D1837476D00CD5A5F /* DHGameChapter.m */; };
-		D2BF4BB31837476D00CD5A5F /* DHGameData.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B8F1837476D00CD5A5F /* DHGameData.m */; };
-		D2BF4BB41837476D00CD5A5F /* DHGameMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B911837476D00CD5A5F /* DHGameMenuLayer.m */; };
-		D2BF4BB51837476D00CD5A5F /* DHGameOptionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B931837476D00CD5A5F /* DHGameOptionLayer.m */; };
-		D2BF4BB61837476D00CD5A5F /* DHGameOverLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B951837476D00CD5A5F /* DHGameOverLayer.m */; };
-		D2BF4BB71837476D00CD5A5F /* DHGameScoreListLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B971837476D00CD5A5F /* DHGameScoreListLayer.m */; };
-		D2BF4BB81837476D00CD5A5F /* DHGameSplashLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B991837476D00CD5A5F /* DHGameSplashLayer.m */; };
-		D2BF4BB91837476D00CD5A5F /* DHIntroPannelObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B9B1837476D00CD5A5F /* DHIntroPannelObj.m */; };
-		D2BF4BBA1837476D00CD5A5F /* DHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B9D1837476D00CD5A5F /* DHLabel.m */; };
-		D2BF4BBB1837476D00CD5A5F /* DHMenuObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4B9F1837476D00CD5A5F /* DHMenuObj.m */; };
-		D2BF4BBC1837476D00CD5A5F /* DHPilot.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4BA11837476D00CD5A5F /* DHPilot.m */; };
-		D2BF4BBD1837476D00CD5A5F /* DHPilotManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4BA31837476D00CD5A5F /* DHPilotManager.m */; };
-		D2BF4BBE1837476D00CD5A5F /* DHScore.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4BA51837476D00CD5A5F /* DHScore.m */; };
-		D2BF4BBF1837476D00CD5A5F /* DHTimeModeGameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4BA71837476D00CD5A5F /* DHTimeModeGameLayer.m */; };
-		D2BF4BC01837476D00CD5A5F /* DHTimeModePannelObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF4BA91837476D00CD5A5F /* DHTimeModePannelObj.m */; };
 		D2BF4BC21837479800CD5A5F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF4BC11837479800CD5A5F /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D220D2481844D4B500F683D7 /* icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-120.png"; path = "Resources/icon-120.png"; sourceTree = "<group>"; };
 		D220D24A1844DA4400F683D7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
+		D2280B8A18BDDE77005CE1E5 /* DHBackGroundObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHBackGroundObj.h; path = ../../DuckHunt_Common/UIObjs/DHBackGroundObj.h; sourceTree = "<group>"; };
+		D2280B8B18BDDE77005CE1E5 /* DHBackGroundObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHBackGroundObj.m; path = ../../DuckHunt_Common/UIObjs/DHBackGroundObj.m; sourceTree = "<group>"; };
+		D2280B8C18BDDE77005CE1E5 /* DHFloatingScoreObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHFloatingScoreObj.h; path = ../../DuckHunt_Common/UIObjs/DHFloatingScoreObj.h; sourceTree = "<group>"; };
+		D2280B8D18BDDE77005CE1E5 /* DHFloatingScoreObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHFloatingScoreObj.m; path = ../../DuckHunt_Common/UIObjs/DHFloatingScoreObj.m; sourceTree = "<group>"; };
+		D2280B8E18BDDE77005CE1E5 /* DHFreeModePannelObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHFreeModePannelObj.h; path = ../../DuckHunt_Common/UIObjs/DHFreeModePannelObj.h; sourceTree = "<group>"; };
+		D2280B8F18BDDE77005CE1E5 /* DHFreeModePannelObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHFreeModePannelObj.m; path = ../../DuckHunt_Common/UIObjs/DHFreeModePannelObj.m; sourceTree = "<group>"; };
+		D2280B9018BDDE77005CE1E5 /* DHIntroPannelObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHIntroPannelObj.h; path = ../../DuckHunt_Common/UIObjs/DHIntroPannelObj.h; sourceTree = "<group>"; };
+		D2280B9118BDDE77005CE1E5 /* DHIntroPannelObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHIntroPannelObj.m; path = ../../DuckHunt_Common/UIObjs/DHIntroPannelObj.m; sourceTree = "<group>"; };
+		D2280B9218BDDE77005CE1E5 /* DHLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHLabel.h; path = ../../DuckHunt_Common/UIObjs/DHLabel.h; sourceTree = "<group>"; };
+		D2280B9318BDDE77005CE1E5 /* DHLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHLabel.m; path = ../../DuckHunt_Common/UIObjs/DHLabel.m; sourceTree = "<group>"; };
+		D2280B9418BDDE77005CE1E5 /* DHMenuObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHMenuObj.h; path = ../../DuckHunt_Common/UIObjs/DHMenuObj.h; sourceTree = "<group>"; };
+		D2280B9518BDDE77005CE1E5 /* DHMenuObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHMenuObj.m; path = ../../DuckHunt_Common/UIObjs/DHMenuObj.m; sourceTree = "<group>"; };
+		D2280B9618BDDE77005CE1E5 /* DHTimeModePannelObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHTimeModePannelObj.h; path = ../../DuckHunt_Common/UIObjs/DHTimeModePannelObj.h; sourceTree = "<group>"; };
+		D2280B9718BDDE77005CE1E5 /* DHTimeModePannelObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHTimeModePannelObj.m; path = ../../DuckHunt_Common/UIObjs/DHTimeModePannelObj.m; sourceTree = "<group>"; };
+		D2280B9F18BDDE9D005CE1E5 /* DHFreeModeContinueLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHFreeModeContinueLayer.h; path = ../../DuckHunt_Common/Scenes/DHFreeModeContinueLayer.h; sourceTree = "<group>"; };
+		D2280BA018BDDE9D005CE1E5 /* DHFreeModeContinueLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHFreeModeContinueLayer.m; path = ../../DuckHunt_Common/Scenes/DHFreeModeContinueLayer.m; sourceTree = "<group>"; };
+		D2280BA118BDDE9D005CE1E5 /* DHFreeModeGameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHFreeModeGameLayer.h; path = ../../DuckHunt_Common/Scenes/DHFreeModeGameLayer.h; sourceTree = "<group>"; };
+		D2280BA218BDDE9D005CE1E5 /* DHFreeModeGameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHFreeModeGameLayer.m; path = ../../DuckHunt_Common/Scenes/DHFreeModeGameLayer.m; sourceTree = "<group>"; };
+		D2280BA318BDDE9D005CE1E5 /* DHGameMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHGameMenuLayer.h; path = ../../DuckHunt_Common/Scenes/DHGameMenuLayer.h; sourceTree = "<group>"; };
+		D2280BA418BDDE9D005CE1E5 /* DHGameMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHGameMenuLayer.m; path = ../../DuckHunt_Common/Scenes/DHGameMenuLayer.m; sourceTree = "<group>"; };
+		D2280BA518BDDE9D005CE1E5 /* DHGameOptionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHGameOptionLayer.h; path = ../../DuckHunt_Common/Scenes/DHGameOptionLayer.h; sourceTree = "<group>"; };
+		D2280BA618BDDE9D005CE1E5 /* DHGameOptionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHGameOptionLayer.m; path = ../../DuckHunt_Common/Scenes/DHGameOptionLayer.m; sourceTree = "<group>"; };
+		D2280BA718BDDE9D005CE1E5 /* DHGameOverLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHGameOverLayer.h; path = ../../DuckHunt_Common/Scenes/DHGameOverLayer.h; sourceTree = "<group>"; };
+		D2280BA818BDDE9D005CE1E5 /* DHGameOverLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHGameOverLayer.m; path = ../../DuckHunt_Common/Scenes/DHGameOverLayer.m; sourceTree = "<group>"; };
+		D2280BA918BDDE9D005CE1E5 /* DHGameScoreListLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHGameScoreListLayer.h; path = ../../DuckHunt_Common/Scenes/DHGameScoreListLayer.h; sourceTree = "<group>"; };
+		D2280BAA18BDDE9D005CE1E5 /* DHGameScoreListLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHGameScoreListLayer.m; path = ../../DuckHunt_Common/Scenes/DHGameScoreListLayer.m; sourceTree = "<group>"; };
+		D2280BAB18BDDE9D005CE1E5 /* DHGameSplashLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHGameSplashLayer.h; path = ../../DuckHunt_Common/Scenes/DHGameSplashLayer.h; sourceTree = "<group>"; };
+		D2280BAC18BDDE9D005CE1E5 /* DHGameSplashLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHGameSplashLayer.m; path = ../../DuckHunt_Common/Scenes/DHGameSplashLayer.m; sourceTree = "<group>"; };
+		D2280BAD18BDDE9D005CE1E5 /* DHTimeModeGameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHTimeModeGameLayer.h; path = ../../DuckHunt_Common/Scenes/DHTimeModeGameLayer.h; sourceTree = "<group>"; };
+		D2280BAE18BDDE9D005CE1E5 /* DHTimeModeGameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHTimeModeGameLayer.m; path = ../../DuckHunt_Common/Scenes/DHTimeModeGameLayer.m; sourceTree = "<group>"; };
+		D2280BB718BDDEB3005CE1E5 /* DHConstons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHConstons.h; path = ../../DuckHunt_Common/DHConstons.h; sourceTree = "<group>"; };
+		D2280BB818BDDEB3005CE1E5 /* DHDogObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHDogObj.h; path = ../../DuckHunt_Common/DHDogObj.h; sourceTree = "<group>"; };
+		D2280BB918BDDEB3005CE1E5 /* DHDogObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHDogObj.m; path = ../../DuckHunt_Common/DHDogObj.m; sourceTree = "<group>"; };
+		D2280BBA18BDDEB3005CE1E5 /* DHDuckObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHDuckObj.h; path = ../../DuckHunt_Common/DHDuckObj.h; sourceTree = "<group>"; };
+		D2280BBB18BDDEB3005CE1E5 /* DHDuckObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHDuckObj.m; path = ../../DuckHunt_Common/DHDuckObj.m; sourceTree = "<group>"; };
+		D2280BBC18BDDEB3005CE1E5 /* DHGameChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHGameChapter.h; path = ../../DuckHunt_Common/DHGameChapter.h; sourceTree = "<group>"; };
+		D2280BBD18BDDEB3005CE1E5 /* DHGameChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHGameChapter.m; path = ../../DuckHunt_Common/DHGameChapter.m; sourceTree = "<group>"; };
+		D2280BBE18BDDEB3005CE1E5 /* DHGameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHGameData.h; path = ../../DuckHunt_Common/DHGameData.h; sourceTree = "<group>"; };
+		D2280BBF18BDDEB3005CE1E5 /* DHGameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHGameData.m; path = ../../DuckHunt_Common/DHGameData.m; sourceTree = "<group>"; };
+		D2280BC018BDDEB3005CE1E5 /* DHPilot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHPilot.h; path = ../../DuckHunt_Common/DHPilot.h; sourceTree = "<group>"; };
+		D2280BC118BDDEB3005CE1E5 /* DHPilot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHPilot.m; path = ../../DuckHunt_Common/DHPilot.m; sourceTree = "<group>"; };
+		D2280BC218BDDEB3005CE1E5 /* DHPilotManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHPilotManager.h; path = ../../DuckHunt_Common/DHPilotManager.h; sourceTree = "<group>"; };
+		D2280BC318BDDEB3005CE1E5 /* DHPilotManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHPilotManager.m; path = ../../DuckHunt_Common/DHPilotManager.m; sourceTree = "<group>"; };
+		D2280BC418BDDEB3005CE1E5 /* DHScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHScore.h; path = ../../DuckHunt_Common/DHScore.h; sourceTree = "<group>"; };
+		D2280BC518BDDEB3005CE1E5 /* DHScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHScore.m; path = ../../DuckHunt_Common/DHScore.m; sourceTree = "<group>"; };
+		D2280BC618BDDEB3005CE1E5 /* DHZDepth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHZDepth.h; path = ../../DuckHunt_Common/DHZDepth.h; sourceTree = "<group>"; };
 		D294CCA918438A61002A4645 /* Snap ITC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Snap ITC.ttf"; path = "Resources/Snap ITC.ttf"; sourceTree = "<group>"; };
 		D2BF495F1837469F00CD5A5F /* DuckHuntPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuckHuntPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BF49621837469F00CD5A5F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -546,52 +592,6 @@
 		D2BF4B461837475F00CD5A5F /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SplashScreen.png; path = Resources/SplashScreen.png; sourceTree = "<group>"; };
 		D2BF4B471837475F00CD5A5F /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter.png; path = Resources/twitter.png; sourceTree = "<group>"; };
 		D2BF4B481837475F00CD5A5F /* weibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weibo.png; path = Resources/weibo.png; sourceTree = "<group>"; };
-		D2BF4B7D1837476D00CD5A5F /* DHBackGroundObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHBackGroundObj.h; sourceTree = "<group>"; };
-		D2BF4B7E1837476D00CD5A5F /* DHBackGroundObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHBackGroundObj.m; sourceTree = "<group>"; };
-		D2BF4B7F1837476D00CD5A5F /* DHConstons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHConstons.h; sourceTree = "<group>"; };
-		D2BF4B801837476D00CD5A5F /* DHDogObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHDogObj.h; sourceTree = "<group>"; };
-		D2BF4B811837476D00CD5A5F /* DHDogObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHDogObj.m; sourceTree = "<group>"; };
-		D2BF4B821837476D00CD5A5F /* DHDuckObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHDuckObj.h; sourceTree = "<group>"; };
-		D2BF4B831837476D00CD5A5F /* DHDuckObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHDuckObj.m; sourceTree = "<group>"; };
-		D2BF4B841837476D00CD5A5F /* DHFloatingScoreObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHFloatingScoreObj.h; sourceTree = "<group>"; };
-		D2BF4B851837476D00CD5A5F /* DHFloatingScoreObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHFloatingScoreObj.m; sourceTree = "<group>"; };
-		D2BF4B861837476D00CD5A5F /* DHFreeModeContinueLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHFreeModeContinueLayer.h; sourceTree = "<group>"; };
-		D2BF4B871837476D00CD5A5F /* DHFreeModeContinueLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHFreeModeContinueLayer.m; sourceTree = "<group>"; };
-		D2BF4B881837476D00CD5A5F /* DHFreeModeGameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHFreeModeGameLayer.h; sourceTree = "<group>"; };
-		D2BF4B891837476D00CD5A5F /* DHFreeModeGameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHFreeModeGameLayer.m; sourceTree = "<group>"; };
-		D2BF4B8A1837476D00CD5A5F /* DHFreeModePannelObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHFreeModePannelObj.h; sourceTree = "<group>"; };
-		D2BF4B8B1837476D00CD5A5F /* DHFreeModePannelObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHFreeModePannelObj.m; sourceTree = "<group>"; };
-		D2BF4B8C1837476D00CD5A5F /* DHGameChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHGameChapter.h; sourceTree = "<group>"; };
-		D2BF4B8D1837476D00CD5A5F /* DHGameChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHGameChapter.m; sourceTree = "<group>"; };
-		D2BF4B8E1837476D00CD5A5F /* DHGameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHGameData.h; sourceTree = "<group>"; };
-		D2BF4B8F1837476D00CD5A5F /* DHGameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHGameData.m; sourceTree = "<group>"; };
-		D2BF4B901837476D00CD5A5F /* DHGameMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHGameMenuLayer.h; sourceTree = "<group>"; };
-		D2BF4B911837476D00CD5A5F /* DHGameMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHGameMenuLayer.m; sourceTree = "<group>"; };
-		D2BF4B921837476D00CD5A5F /* DHGameOptionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHGameOptionLayer.h; sourceTree = "<group>"; };
-		D2BF4B931837476D00CD5A5F /* DHGameOptionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHGameOptionLayer.m; sourceTree = "<group>"; };
-		D2BF4B941837476D00CD5A5F /* DHGameOverLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHGameOverLayer.h; sourceTree = "<group>"; };
-		D2BF4B951837476D00CD5A5F /* DHGameOverLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHGameOverLayer.m; sourceTree = "<group>"; };
-		D2BF4B961837476D00CD5A5F /* DHGameScoreListLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHGameScoreListLayer.h; sourceTree = "<group>"; };
-		D2BF4B971837476D00CD5A5F /* DHGameScoreListLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHGameScoreListLayer.m; sourceTree = "<group>"; };
-		D2BF4B981837476D00CD5A5F /* DHGameSplashLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHGameSplashLayer.h; sourceTree = "<group>"; };
-		D2BF4B991837476D00CD5A5F /* DHGameSplashLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHGameSplashLayer.m; sourceTree = "<group>"; };
-		D2BF4B9A1837476D00CD5A5F /* DHIntroPannelObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHIntroPannelObj.h; sourceTree = "<group>"; };
-		D2BF4B9B1837476D00CD5A5F /* DHIntroPannelObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHIntroPannelObj.m; sourceTree = "<group>"; };
-		D2BF4B9C1837476D00CD5A5F /* DHLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHLabel.h; sourceTree = "<group>"; };
-		D2BF4B9D1837476D00CD5A5F /* DHLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHLabel.m; sourceTree = "<group>"; };
-		D2BF4B9E1837476D00CD5A5F /* DHMenuObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHMenuObj.h; sourceTree = "<group>"; };
-		D2BF4B9F1837476D00CD5A5F /* DHMenuObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHMenuObj.m; sourceTree = "<group>"; };
-		D2BF4BA01837476D00CD5A5F /* DHPilot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHPilot.h; sourceTree = "<group>"; };
-		D2BF4BA11837476D00CD5A5F /* DHPilot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHPilot.m; sourceTree = "<group>"; };
-		D2BF4BA21837476D00CD5A5F /* DHPilotManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHPilotManager.h; sourceTree = "<group>"; };
-		D2BF4BA31837476D00CD5A5F /* DHPilotManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHPilotManager.m; sourceTree = "<group>"; };
-		D2BF4BA41837476D00CD5A5F /* DHScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHScore.h; sourceTree = "<group>"; };
-		D2BF4BA51837476D00CD5A5F /* DHScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHScore.m; sourceTree = "<group>"; };
-		D2BF4BA61837476D00CD5A5F /* DHTimeModeGameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTimeModeGameLayer.h; sourceTree = "<group>"; };
-		D2BF4BA71837476D00CD5A5F /* DHTimeModeGameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTimeModeGameLayer.m; sourceTree = "<group>"; };
-		D2BF4BA81837476D00CD5A5F /* DHTimeModePannelObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTimeModePannelObj.h; sourceTree = "<group>"; };
-		D2BF4BA91837476D00CD5A5F /* DHTimeModePannelObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTimeModePannelObj.m; sourceTree = "<group>"; };
-		D2BF4BAA1837476D00CD5A5F /* DHZDepth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHZDepth.h; sourceTree = "<group>"; };
 		D2BF4BC11837479800CD5A5F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -653,24 +653,24 @@
 		D2BF49761837469F00CD5A5F /* DuckHuntPro */ = {
 			isa = PBXGroup;
 			children = (
+				D2280BB718BDDEB3005CE1E5 /* DHConstons.h */,
+				D2280BB818BDDEB3005CE1E5 /* DHDogObj.h */,
+				D2280BB918BDDEB3005CE1E5 /* DHDogObj.m */,
+				D2280BBA18BDDEB3005CE1E5 /* DHDuckObj.h */,
+				D2280BBB18BDDEB3005CE1E5 /* DHDuckObj.m */,
+				D2280BBC18BDDEB3005CE1E5 /* DHGameChapter.h */,
+				D2280BBD18BDDEB3005CE1E5 /* DHGameChapter.m */,
+				D2280BBE18BDDEB3005CE1E5 /* DHGameData.h */,
+				D2280BBF18BDDEB3005CE1E5 /* DHGameData.m */,
+				D2280BC018BDDEB3005CE1E5 /* DHPilot.h */,
+				D2280BC118BDDEB3005CE1E5 /* DHPilot.m */,
+				D2280BC218BDDEB3005CE1E5 /* DHPilotManager.h */,
+				D2280BC318BDDEB3005CE1E5 /* DHPilotManager.m */,
+				D2280BC418BDDEB3005CE1E5 /* DHScore.h */,
+				D2280BC518BDDEB3005CE1E5 /* DHScore.m */,
+				D2280BC618BDDEB3005CE1E5 /* DHZDepth.h */,
 				D2BF4BC418374AAD00CD5A5F /* UIObjs */,
 				D2BF4BC318374A7C00CD5A5F /* Scenes */,
-				D2BF4B7F1837476D00CD5A5F /* DHConstons.h */,
-				D2BF4B801837476D00CD5A5F /* DHDogObj.h */,
-				D2BF4B811837476D00CD5A5F /* DHDogObj.m */,
-				D2BF4B821837476D00CD5A5F /* DHDuckObj.h */,
-				D2BF4B831837476D00CD5A5F /* DHDuckObj.m */,
-				D2BF4B8C1837476D00CD5A5F /* DHGameChapter.h */,
-				D2BF4B8D1837476D00CD5A5F /* DHGameChapter.m */,
-				D2BF4B8E1837476D00CD5A5F /* DHGameData.h */,
-				D2BF4B8F1837476D00CD5A5F /* DHGameData.m */,
-				D2BF4BA01837476D00CD5A5F /* DHPilot.h */,
-				D2BF4BA11837476D00CD5A5F /* DHPilot.m */,
-				D2BF4BA21837476D00CD5A5F /* DHPilotManager.h */,
-				D2BF4BA31837476D00CD5A5F /* DHPilotManager.m */,
-				D2BF4BA41837476D00CD5A5F /* DHScore.h */,
-				D2BF4BA51837476D00CD5A5F /* DHScore.m */,
-				D2BF4BAA1837476D00CD5A5F /* DHZDepth.h */,
 				D2BF4B07183746A100CD5A5F /* AppDelegate.h */,
 				D2BF4B08183746A100CD5A5F /* AppDelegate.m */,
 				D2BF49771837469F00CD5A5F /* Resources */,
@@ -1117,22 +1117,22 @@
 		D2BF4BC318374A7C00CD5A5F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D2BF4B861837476D00CD5A5F /* DHFreeModeContinueLayer.h */,
-				D2BF4B871837476D00CD5A5F /* DHFreeModeContinueLayer.m */,
-				D2BF4B881837476D00CD5A5F /* DHFreeModeGameLayer.h */,
-				D2BF4B891837476D00CD5A5F /* DHFreeModeGameLayer.m */,
-				D2BF4B901837476D00CD5A5F /* DHGameMenuLayer.h */,
-				D2BF4B911837476D00CD5A5F /* DHGameMenuLayer.m */,
-				D2BF4B921837476D00CD5A5F /* DHGameOptionLayer.h */,
-				D2BF4B931837476D00CD5A5F /* DHGameOptionLayer.m */,
-				D2BF4B941837476D00CD5A5F /* DHGameOverLayer.h */,
-				D2BF4B951837476D00CD5A5F /* DHGameOverLayer.m */,
-				D2BF4B961837476D00CD5A5F /* DHGameScoreListLayer.h */,
-				D2BF4B971837476D00CD5A5F /* DHGameScoreListLayer.m */,
-				D2BF4B981837476D00CD5A5F /* DHGameSplashLayer.h */,
-				D2BF4B991837476D00CD5A5F /* DHGameSplashLayer.m */,
-				D2BF4BA61837476D00CD5A5F /* DHTimeModeGameLayer.h */,
-				D2BF4BA71837476D00CD5A5F /* DHTimeModeGameLayer.m */,
+				D2280B9F18BDDE9D005CE1E5 /* DHFreeModeContinueLayer.h */,
+				D2280BA018BDDE9D005CE1E5 /* DHFreeModeContinueLayer.m */,
+				D2280BA118BDDE9D005CE1E5 /* DHFreeModeGameLayer.h */,
+				D2280BA218BDDE9D005CE1E5 /* DHFreeModeGameLayer.m */,
+				D2280BA318BDDE9D005CE1E5 /* DHGameMenuLayer.h */,
+				D2280BA418BDDE9D005CE1E5 /* DHGameMenuLayer.m */,
+				D2280BA518BDDE9D005CE1E5 /* DHGameOptionLayer.h */,
+				D2280BA618BDDE9D005CE1E5 /* DHGameOptionLayer.m */,
+				D2280BA718BDDE9D005CE1E5 /* DHGameOverLayer.h */,
+				D2280BA818BDDE9D005CE1E5 /* DHGameOverLayer.m */,
+				D2280BA918BDDE9D005CE1E5 /* DHGameScoreListLayer.h */,
+				D2280BAA18BDDE9D005CE1E5 /* DHGameScoreListLayer.m */,
+				D2280BAB18BDDE9D005CE1E5 /* DHGameSplashLayer.h */,
+				D2280BAC18BDDE9D005CE1E5 /* DHGameSplashLayer.m */,
+				D2280BAD18BDDE9D005CE1E5 /* DHTimeModeGameLayer.h */,
+				D2280BAE18BDDE9D005CE1E5 /* DHTimeModeGameLayer.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -1140,20 +1140,20 @@
 		D2BF4BC418374AAD00CD5A5F /* UIObjs */ = {
 			isa = PBXGroup;
 			children = (
-				D2BF4B7D1837476D00CD5A5F /* DHBackGroundObj.h */,
-				D2BF4B7E1837476D00CD5A5F /* DHBackGroundObj.m */,
-				D2BF4B8A1837476D00CD5A5F /* DHFreeModePannelObj.h */,
-				D2BF4B8B1837476D00CD5A5F /* DHFreeModePannelObj.m */,
-				D2BF4B9A1837476D00CD5A5F /* DHIntroPannelObj.h */,
-				D2BF4B9B1837476D00CD5A5F /* DHIntroPannelObj.m */,
-				D2BF4B9C1837476D00CD5A5F /* DHLabel.h */,
-				D2BF4B9D1837476D00CD5A5F /* DHLabel.m */,
-				D2BF4B9E1837476D00CD5A5F /* DHMenuObj.h */,
-				D2BF4B9F1837476D00CD5A5F /* DHMenuObj.m */,
-				D2BF4BA81837476D00CD5A5F /* DHTimeModePannelObj.h */,
-				D2BF4BA91837476D00CD5A5F /* DHTimeModePannelObj.m */,
-				D2BF4B841837476D00CD5A5F /* DHFloatingScoreObj.h */,
-				D2BF4B851837476D00CD5A5F /* DHFloatingScoreObj.m */,
+				D2280B8A18BDDE77005CE1E5 /* DHBackGroundObj.h */,
+				D2280B8B18BDDE77005CE1E5 /* DHBackGroundObj.m */,
+				D2280B8C18BDDE77005CE1E5 /* DHFloatingScoreObj.h */,
+				D2280B8D18BDDE77005CE1E5 /* DHFloatingScoreObj.m */,
+				D2280B8E18BDDE77005CE1E5 /* DHFreeModePannelObj.h */,
+				D2280B8F18BDDE77005CE1E5 /* DHFreeModePannelObj.m */,
+				D2280B9018BDDE77005CE1E5 /* DHIntroPannelObj.h */,
+				D2280B9118BDDE77005CE1E5 /* DHIntroPannelObj.m */,
+				D2280B9218BDDE77005CE1E5 /* DHLabel.h */,
+				D2280B9318BDDE77005CE1E5 /* DHLabel.m */,
+				D2280B9418BDDE77005CE1E5 /* DHMenuObj.h */,
+				D2280B9518BDDE77005CE1E5 /* DHMenuObj.m */,
+				D2280B9618BDDE77005CE1E5 /* DHTimeModePannelObj.h */,
+				D2280B9718BDDE77005CE1E5 /* DHTimeModePannelObj.m */,
 			);
 			name = UIObjs;
 			sourceTree = "<group>";
@@ -1294,19 +1294,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2280BCD18BDDEB3005CE1E5 /* DHScore.m in Sources */,
 				D2BF4A53183746A000CD5A5F /* CCTexturePVR.m in Sources */,
+				D2280B9818BDDE77005CE1E5 /* DHBackGroundObj.m in Sources */,
 				D2BF4AA3183746A100CD5A5F /* ccUtils.c in Sources */,
 				D2BF49F4183746A000CD5A5F /* CCLayer.m in Sources */,
-				D2BF4BB61837476D00CD5A5F /* DHGameOverLayer.m in Sources */,
 				D2BF4A56183746A000CD5A5F /* CCTileMapAtlas.m in Sources */,
 				D2BF4A59183746A000CD5A5F /* CCTMXLayer.m in Sources */,
-				D2BF4BAF1837476D00CD5A5F /* DHFreeModeContinueLayer.m in Sources */,
+				D2280BCB18BDDEB3005CE1E5 /* DHPilot.m in Sources */,
 				D2BF4AF1183746A100CD5A5F /* mat4.c in Sources */,
 				D2BF49CD1837469F00CD5A5F /* ccDeprecated.m in Sources */,
 				D2BF4A88183746A000CD5A5F /* CCDirectorMac.m in Sources */,
 				D2BF49E21837469F00CD5A5F /* ccGLStateCache.m in Sources */,
 				D2BF4AB4183746A100CD5A5F /* TransformUtils.m in Sources */,
-				D2BF4BB51837476D00CD5A5F /* DHGameOptionLayer.m in Sources */,
 				D2BF4A01183746A000CD5A5F /* CCNode+Debug.m in Sources */,
 				D2BF49DC1837469F00CD5A5F /* ccFPSImages.m in Sources */,
 				D2BF4A62183746A000CD5A5F /* CCTMXXMLParser.m in Sources */,
@@ -1329,72 +1329,69 @@
 				D2BF4A4D183746A000CD5A5F /* CCTextureAtlas.m in Sources */,
 				D2BF4AFB183746A100CD5A5F /* utility.c in Sources */,
 				D2BF4AA7183746A100CD5A5F /* CCVertex.m in Sources */,
-				D2BF4BB31837476D00CD5A5F /* DHGameData.m in Sources */,
-				D2BF4BAD1837476D00CD5A5F /* DHDuckObj.m in Sources */,
 				D2BF4AAD183746A100CD5A5F /* NSThread+performBlock.m in Sources */,
 				D2BF49B41837469F00CD5A5F /* CCActionTiledGrid.m in Sources */,
 				D2BF49FB183746A000CD5A5F /* CCMenuItem.m in Sources */,
 				D2BF49961837469F00CD5A5F /* CCActionCamera.m in Sources */,
 				D2BF4AC8183746A100CD5A5F /* CDXPropertyModifierAction.m in Sources */,
 				D2BF4A98183746A000CD5A5F /* CCArray.m in Sources */,
+				D2280BC818BDDEB3005CE1E5 /* DHDuckObj.m in Sources */,
 				D2BF4AF5183746A100CD5A5F /* plane.c in Sources */,
-				D2BF4BB81837476D00CD5A5F /* DHGameSplashLayer.m in Sources */,
+				D2280BB218BDDE9D005CE1E5 /* DHGameOptionLayer.m in Sources */,
 				D2BF4AA1183746A100CD5A5F /* CCProfiling.m in Sources */,
 				D2BF4A38183746A000CD5A5F /* CCShaderCache.m in Sources */,
 				D2BF4A3E183746A000CD5A5F /* CCSprite.m in Sources */,
 				D2BF49E51837469F00CD5A5F /* CCGrabber.m in Sources */,
-				D2BF4BAB1837476D00CD5A5F /* DHBackGroundObj.m in Sources */,
 				D2BF4AEF183746A100CD5A5F /* mat3.c in Sources */,
 				D2BF4B09183746A100CD5A5F /* AppDelegate.m in Sources */,
 				D2BF4A79183746A000CD5A5F /* CCES2Renderer.m in Sources */,
 				D2BF49EB1837469F00CD5A5F /* CCLabelAtlas.m in Sources */,
 				D2BF4A07183746A000CD5A5F /* CCParallaxNode.m in Sources */,
 				D2BF499F1837469F00CD5A5F /* CCActionGrid.m in Sources */,
-				D2BF4BBC1837476D00CD5A5F /* DHPilot.m in Sources */,
+				D2280BB418BDDE9D005CE1E5 /* DHGameScoreListLayer.m in Sources */,
 				D2BF49E81837469F00CD5A5F /* CCGrid.m in Sources */,
 				D2BF4AF7183746A100CD5A5F /* quaternion.c in Sources */,
-				D2BF4BB01837476D00CD5A5F /* DHFreeModeGameLayer.m in Sources */,
+				D2280B9A18BDDE77005CE1E5 /* DHFreeModePannelObj.m in Sources */,
 				D2BF4A44183746A000CD5A5F /* CCSpriteFrame.m in Sources */,
 				D2BF49B11837469F00CD5A5F /* CCActionProgressTimer.m in Sources */,
 				D2BF49931837469F00CD5A5F /* CCAction.m in Sources */,
 				D2BF4ACB183746A100CD5A5F /* CocosDenshion.m in Sources */,
 				D2BF4A50183746A000CD5A5F /* CCTextureCache.m in Sources */,
 				D2BF4AF3183746A100CD5A5F /* neon_matrix_impl.c in Sources */,
-				D2BF4BBB1837476D00CD5A5F /* DHMenuObj.m in Sources */,
+				D2280BB018BDDE9D005CE1E5 /* DHFreeModeGameLayer.m in Sources */,
+				D2280B9B18BDDE77005CE1E5 /* DHIntroPannelObj.m in Sources */,
 				D2BF4A23183746A000CD5A5F /* CCScene.m in Sources */,
-				D2BF4BBF1837476D00CD5A5F /* DHTimeModeGameLayer.m in Sources */,
 				D2BF49A21837469F00CD5A5F /* CCActionGrid3D.m in Sources */,
 				D2BF4AEB183746A100CD5A5F /* mat4stack.c in Sources */,
 				D2BF4A47183746A000CD5A5F /* CCSpriteFrameCache.m in Sources */,
 				D2BF49D01837469F00CD5A5F /* CCDirector.m in Sources */,
 				D2BF49C01837469F00CD5A5F /* CCAtlasNode.m in Sources */,
 				D2BF4B06183746A100CD5A5F /* main.m in Sources */,
+				D2280BB118BDDE9D005CE1E5 /* DHGameMenuLayer.m in Sources */,
+				D2280B9918BDDE77005CE1E5 /* DHFloatingScoreObj.m in Sources */,
 				D2BF4A84183746A000CD5A5F /* CCTouchHandler.m in Sources */,
 				D2BF49FE183746A000CD5A5F /* CCMotionStreak.m in Sources */,
-				D2BF4BB91837476D00CD5A5F /* DHIntroPannelObj.m in Sources */,
 				D2BF4A7D183746A000CD5A5F /* CCGLView.m in Sources */,
 				D2BF4AAA183746A100CD5A5F /* CGPointExtension.m in Sources */,
+				D2280BB618BDDE9D005CE1E5 /* DHTimeModeGameLayer.m in Sources */,
 				D2BF49AE1837469F00CD5A5F /* CCActionPageTurn3D.m in Sources */,
 				D2BF4AFF183746A100CD5A5F /* vec3.c in Sources */,
 				D2BF4AB1183746A100CD5A5F /* TGAlib.m in Sources */,
-				D2BF4BBE1837476D00CD5A5F /* DHScore.m in Sources */,
-				D2BF4BB41837476D00CD5A5F /* DHGameMenuLayer.m in Sources */,
-				D2BF4BC01837476D00CD5A5F /* DHTimeModePannelObj.m in Sources */,
+				D2280B9E18BDDE77005CE1E5 /* DHTimeModePannelObj.m in Sources */,
 				D2BF49BA1837469F00CD5A5F /* CCAnimation.m in Sources */,
 				D2BF4AE5183746A100CD5A5F /* aabb.c in Sources */,
 				D2BF4A5C183746A000CD5A5F /* CCTMXObjectGroup.m in Sources */,
-				D2BF4BBA1837476D00CD5A5F /* DHLabel.m in Sources */,
 				D2BF4ABE183746A100CD5A5F /* CDAudioManager.m in Sources */,
 				D2BF4A6B183746A000CD5A5F /* CCTransitionProgress.m in Sources */,
 				D2BF4A8E183746A000CD5A5F /* CCGLView.m in Sources */,
 				D2BF4AC2183746A100CD5A5F /* CDOpenALSupport.m in Sources */,
 				D2BF49A51837469F00CD5A5F /* CCActionInstant.m in Sources */,
+				D2280BB318BDDE9D005CE1E5 /* DHGameOverLayer.m in Sources */,
 				D2BF49C61837469F00CD5A5F /* CCClippingNode.m in Sources */,
+				D2280BB518BDDE9D005CE1E5 /* DHGameSplashLayer.m in Sources */,
 				D2BF4A4A183746A000CD5A5F /* CCTexture2D.m in Sources */,
 				D2BF4A5F183746A000CD5A5F /* CCTMXTiledMap.m in Sources */,
 				D2BF4A20183746A000CD5A5F /* CCRenderTexture.m in Sources */,
-				D2BF4BBD1837476D00CD5A5F /* DHPilotManager.m in Sources */,
-				D2BF4BB71837476D00CD5A5F /* DHGameScoreListLayer.m in Sources */,
 				D2BF49A81837469F00CD5A5F /* CCActionInterval.m in Sources */,
 				D2BF4A16183746A000CD5A5F /* CCPhysicsDebugNode.m in Sources */,
 				D2BF499C1837469F00CD5A5F /* CCActionEase.m in Sources */,
@@ -1402,6 +1399,7 @@
 				D2BF4A19183746A000CD5A5F /* CCPhysicsSprite.mm in Sources */,
 				D2BF4AFD183746A100CD5A5F /* vec2.c in Sources */,
 				D2BF4AED183746A100CD5A5F /* matrix.c in Sources */,
+				D2280BC718BDDEB3005CE1E5 /* DHDogObj.m in Sources */,
 				D2BF49D31837469F00CD5A5F /* CCDrawingPrimitives.m in Sources */,
 				D2BF4A3B183746A000CD5A5F /* ccShaders.m in Sources */,
 				D2BF4A91183746A000CD5A5F /* CCWindow.m in Sources */,
@@ -1412,19 +1410,21 @@
 				D2BF4A8B183746A000CD5A5F /* CCEventDispatcher.m in Sources */,
 				D2BF4A41183746A000CD5A5F /* CCSpriteBatchNode.m in Sources */,
 				D2BF49CA1837469F00CD5A5F /* CCConfiguration.m in Sources */,
+				D2280BCA18BDDEB3005CE1E5 /* DHGameData.m in Sources */,
 				D2BF4A26183746A000CD5A5F /* CCScheduler.m in Sources */,
-				D2BF4BB11837476D00CD5A5F /* DHFreeModePannelObj.m in Sources */,
-				D2BF4BAC1837476D00CD5A5F /* DHDogObj.m in Sources */,
-				D2BF4BB21837476D00CD5A5F /* DHGameChapter.m in Sources */,
+				D2280B9C18BDDE77005CE1E5 /* DHLabel.m in Sources */,
 				D2BF4A76183746A000CD5A5F /* CCDirectorIOS.m in Sources */,
+				D2280BAF18BDDE9D005CE1E5 /* DHFreeModeContinueLayer.m in Sources */,
 				D2BF49F8183746A000CD5A5F /* CCMenu.m in Sources */,
+				D2280BC918BDDEB3005CE1E5 /* DHGameChapter.m in Sources */,
 				D2BF4B01183746A100CD5A5F /* vec4.c in Sources */,
 				D2BF49C31837469F00CD5A5F /* CCCamera.m in Sources */,
-				D2BF4BAE1837476D00CD5A5F /* DHFloatingScoreObj.m in Sources */,
 				D2BF49BD1837469F00CD5A5F /* CCAnimationCache.m in Sources */,
 				D2BF49DF1837469F00CD5A5F /* CCGLProgram.m in Sources */,
+				D2280BCC18BDDEB3005CE1E5 /* DHPilotManager.m in Sources */,
 				D2BF4ACF183746A100CD5A5F /* SimpleAudioEngine.m in Sources */,
 				D2BF4A81183746A000CD5A5F /* CCTouchDispatcher.m in Sources */,
+				D2280B9D18BDDE77005CE1E5 /* DHMenuObj.m in Sources */,
 				D2BF4A04183746A000CD5A5F /* CCNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
