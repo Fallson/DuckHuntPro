@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "17600DF71604FC89626958D020FBD6960C4F2E4F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2ACA216C87EEB64B423FF9F27064F2DF6206A828" : 0,
+    "17600DF71604FC89626958D020FBD6960C4F2E4F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3EB8750F-DC96-4812-A51E-37A7D457D838",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2ACA216C87EEB64B423FF9F27064F2DF6206A828" : "DuckHunt_Common\/",
+    "17600DF71604FC89626958D020FBD6960C4F2E4F" : "DuckHunt\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DuckHuntPro",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DuckHuntPro.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Fallson\/DuckHuntPro.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "17600DF71604FC89626958D020FBD6960C4F2E4F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Fallson\/DuckHunt_Common.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2ACA216C87EEB64B423FF9F27064F2DF6206A828"
+    }
+  ]
+}

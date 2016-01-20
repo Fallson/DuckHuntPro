@@ -31,6 +31,7 @@
 		D2280BCB18BDDEB3005CE1E5 /* DHPilot.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BC118BDDEB3005CE1E5 /* DHPilot.m */; };
 		D2280BCC18BDDEB3005CE1E5 /* DHPilotManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BC318BDDEB3005CE1E5 /* DHPilotManager.m */; };
 		D2280BCD18BDDEB3005CE1E5 /* DHScore.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BC518BDDEB3005CE1E5 /* DHScore.m */; };
+		D22D226718D9D407007D11E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D22D226918D9D407007D11E6 /* InfoPlist.strings */; };
 		D294CCAA18438A61002A4645 /* Snap ITC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D294CCA918438A61002A4645 /* Snap ITC.ttf */; };
 		D2BF49631837469F00CD5A5F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF49621837469F00CD5A5F /* QuartzCore.framework */; };
 		D2BF49651837469F00CD5A5F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF49641837469F00CD5A5F /* OpenGLES.framework */; };
@@ -265,6 +266,8 @@
 		D2280BC418BDDEB3005CE1E5 /* DHScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHScore.h; path = ../../DuckHunt_Common/DHScore.h; sourceTree = "<group>"; };
 		D2280BC518BDDEB3005CE1E5 /* DHScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHScore.m; path = ../../DuckHunt_Common/DHScore.m; sourceTree = "<group>"; };
 		D2280BC618BDDEB3005CE1E5 /* DHZDepth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHZDepth.h; path = ../../DuckHunt_Common/DHZDepth.h; sourceTree = "<group>"; };
+		D22D226818D9D407007D11E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D22D226B18D9D51E007D11E6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		D294CCA918438A61002A4645 /* Snap ITC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Snap ITC.ttf"; path = "Resources/Snap ITC.ttf"; sourceTree = "<group>"; };
 		D2BF495F1837469F00CD5A5F /* DuckHuntPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuckHuntPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BF49621837469F00CD5A5F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -683,6 +686,7 @@
 		D2BF49771837469F00CD5A5F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D22D226918D9D407007D11E6 /* InfoPlist.strings */,
 				D220D24A1844DA4400F683D7 /* Default@2x.png */,
 				D220D2481844D4B500F683D7 /* icon-120.png */,
 				D294CCA918438A61002A4645 /* Snap ITC.ttf */,
@@ -1188,7 +1192,6 @@
 				ORGANIZATIONNAME = Fallson;
 				TargetAttributes = {
 					D2BF495E1837469F00CD5A5F = {
-						DevelopmentTeam = 3D44ZQTQDW;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 0;
@@ -1203,6 +1206,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = D2BF49561837469F00CD5A5F;
 			productRefGroup = D2BF49601837469F00CD5A5F /* Products */;
@@ -1250,6 +1254,7 @@
 				D2BF4B751837475F00CD5A5F /* shoot.wav in Resources */,
 				D2BF4B521837475F00CD5A5F /* Cloud.png in Resources */,
 				D2BF49811837469F00CD5A5F /* Icon-72.png in Resources */,
+				D22D226718D9D407007D11E6 /* InfoPlist.strings in Resources */,
 				D2BF4B4B1837475F00CD5A5F /* bg_sky.png in Resources */,
 				D2BF49791837469F00CD5A5F /* Default.png in Resources */,
 				D2BF4B541837475F00CD5A5F /* Default-Landscape@2x~ipad.png in Resources */,
@@ -1430,6 +1435,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D22D226918D9D407007D11E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D22D226818D9D407007D11E6 /* en */,
+				D22D226B18D9D51E007D11E6 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D2BF4B10183746A100CD5A5F /* Debug */ = {
