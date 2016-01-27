@@ -1192,6 +1192,7 @@
 				ORGANIZATIONNAME = Fallson;
 				TargetAttributes = {
 					D2BF495E1837469F00CD5A5F = {
+						DevelopmentTeam = 3D44ZQTQDW;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 0;
@@ -1495,7 +1496,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DuckHuntPro/Prefix.pch;
@@ -1508,6 +1511,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "arm64 armv6 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1518,7 +1522,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DuckHuntPro/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"DuckHuntPro/libs/kazmath/include\"";
@@ -1530,6 +1536,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "arm64 armv6 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
