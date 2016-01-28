@@ -667,8 +667,6 @@
 		D2BF49761837469F00CD5A5F /* DuckHuntPro */ = {
 			isa = PBXGroup;
 			children = (
-				D23F90F21C59AAE800109F89 /* DHPlaneObj.h */,
-				D23F90F31C59AAE800109F89 /* DHPlaneObj.m */,
 				D2280BB718BDDEB3005CE1E5 /* DHConstons.h */,
 				D2280BB818BDDEB3005CE1E5 /* DHDogObj.h */,
 				D2280BB918BDDEB3005CE1E5 /* DHDogObj.m */,
@@ -1161,6 +1159,8 @@
 		D2BF4BC418374AAD00CD5A5F /* UIObjs */ = {
 			isa = PBXGroup;
 			children = (
+				D23F90F21C59AAE800109F89 /* DHPlaneObj.h */,
+				D23F90F31C59AAE800109F89 /* DHPlaneObj.m */,
 				D2280B8A18BDDE77005CE1E5 /* DHBackGroundObj.h */,
 				D2280B8B18BDDE77005CE1E5 /* DHBackGroundObj.m */,
 				D2280B8C18BDDE77005CE1E5 /* DHFloatingScoreObj.h */,
