@@ -32,11 +32,13 @@
 		D2280BCC18BDDEB3005CE1E5 /* DHPilotManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BC318BDDEB3005CE1E5 /* DHPilotManager.m */; };
 		D2280BCD18BDDEB3005CE1E5 /* DHScore.m in Sources */ = {isa = PBXBuildFile; fileRef = D2280BC518BDDEB3005CE1E5 /* DHScore.m */; };
 		D22D226718D9D407007D11E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D22D226918D9D407007D11E6 /* InfoPlist.strings */; };
-		D23F90F41C59AAE900109F89 /* DHPlaneObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F90F31C59AAE800109F89 /* DHPlaneObj.m */; };
 		D23F90F91C59AF3100109F89 /* planeA.plist in Resources */ = {isa = PBXBuildFile; fileRef = D23F90F51C59AF3100109F89 /* planeA.plist */; };
 		D23F90FA1C59AF3100109F89 /* planeA.png in Resources */ = {isa = PBXBuildFile; fileRef = D23F90F61C59AF3100109F89 /* planeA.png */; };
 		D23F90FB1C59AF3100109F89 /* planeB.plist in Resources */ = {isa = PBXBuildFile; fileRef = D23F90F71C59AF3100109F89 /* planeB.plist */; };
 		D23F90FC1C59AF3100109F89 /* planeB.png in Resources */ = {isa = PBXBuildFile; fileRef = D23F90F81C59AF3100109F89 /* planeB.png */; };
+		D23F91011C5A2E6F00109F89 /* DHHintObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F90FE1C5A2E6F00109F89 /* DHHintObj.m */; };
+		D23F91021C5A2E6F00109F89 /* DHPlaneObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F91001C5A2E6F00109F89 /* DHPlaneObj.m */; };
+		D23F91041C5A300400109F89 /* turtle.png in Resources */ = {isa = PBXBuildFile; fileRef = D23F91031C5A300400109F89 /* turtle.png */; };
 		D294CCAA18438A61002A4645 /* Snap ITC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D294CCA918438A61002A4645 /* Snap ITC.ttf */; };
 		D2BF49631837469F00CD5A5F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF49621837469F00CD5A5F /* QuartzCore.framework */; };
 		D2BF49651837469F00CD5A5F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF49641837469F00CD5A5F /* OpenGLES.framework */; };
@@ -273,12 +275,15 @@
 		D2280BC618BDDEB3005CE1E5 /* DHZDepth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHZDepth.h; path = ../../DuckHunt_Common/DHZDepth.h; sourceTree = "<group>"; };
 		D22D226818D9D407007D11E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D22D226B18D9D51E007D11E6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		D23F90F21C59AAE800109F89 /* DHPlaneObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHPlaneObj.h; path = ../../DuckHunt_Common/DHPlaneObj.h; sourceTree = "<group>"; };
-		D23F90F31C59AAE800109F89 /* DHPlaneObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHPlaneObj.m; path = ../../DuckHunt_Common/DHPlaneObj.m; sourceTree = "<group>"; };
 		D23F90F51C59AF3100109F89 /* planeA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = planeA.plist; path = Resources/planeA.plist; sourceTree = "<group>"; };
 		D23F90F61C59AF3100109F89 /* planeA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = planeA.png; path = Resources/planeA.png; sourceTree = "<group>"; };
 		D23F90F71C59AF3100109F89 /* planeB.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = planeB.plist; path = Resources/planeB.plist; sourceTree = "<group>"; };
 		D23F90F81C59AF3100109F89 /* planeB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = planeB.png; path = Resources/planeB.png; sourceTree = "<group>"; };
+		D23F90FD1C5A2E6F00109F89 /* DHHintObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHHintObj.h; path = ../../DuckHunt_Common/UIObjs/DHHintObj.h; sourceTree = "<group>"; };
+		D23F90FE1C5A2E6F00109F89 /* DHHintObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHHintObj.m; path = ../../DuckHunt_Common/UIObjs/DHHintObj.m; sourceTree = "<group>"; };
+		D23F90FF1C5A2E6F00109F89 /* DHPlaneObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHPlaneObj.h; path = ../../DuckHunt_Common/UIObjs/DHPlaneObj.h; sourceTree = "<group>"; };
+		D23F91001C5A2E6F00109F89 /* DHPlaneObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHPlaneObj.m; path = ../../DuckHunt_Common/UIObjs/DHPlaneObj.m; sourceTree = "<group>"; };
+		D23F91031C5A300400109F89 /* turtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = turtle.png; path = Resources/turtle.png; sourceTree = "<group>"; };
 		D294CCA918438A61002A4645 /* Snap ITC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Snap ITC.ttf"; path = "Resources/Snap ITC.ttf"; sourceTree = "<group>"; };
 		D2BF495F1837469F00CD5A5F /* DuckHuntPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuckHuntPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BF49621837469F00CD5A5F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -697,6 +702,7 @@
 		D2BF49771837469F00CD5A5F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D23F91031C5A300400109F89 /* turtle.png */,
 				D23F90F51C59AF3100109F89 /* planeA.plist */,
 				D23F90F61C59AF3100109F89 /* planeA.png */,
 				D23F90F71C59AF3100109F89 /* planeB.plist */,
@@ -1159,8 +1165,10 @@
 		D2BF4BC418374AAD00CD5A5F /* UIObjs */ = {
 			isa = PBXGroup;
 			children = (
-				D23F90F21C59AAE800109F89 /* DHPlaneObj.h */,
-				D23F90F31C59AAE800109F89 /* DHPlaneObj.m */,
+				D23F90FD1C5A2E6F00109F89 /* DHHintObj.h */,
+				D23F90FE1C5A2E6F00109F89 /* DHHintObj.m */,
+				D23F90FF1C5A2E6F00109F89 /* DHPlaneObj.h */,
+				D23F91001C5A2E6F00109F89 /* DHPlaneObj.m */,
 				D2280B8A18BDDE77005CE1E5 /* DHBackGroundObj.h */,
 				D2280B8B18BDDE77005CE1E5 /* DHBackGroundObj.m */,
 				D2280B8C18BDDE77005CE1E5 /* DHFloatingScoreObj.h */,
@@ -1281,6 +1289,7 @@
 				D220D2491844D4B500F683D7 /* icon-120.png in Resources */,
 				D2BF49831837469F00CD5A5F /* Icon-Small-50.png in Resources */,
 				D2BF4B6A1837475F00CD5A5F /* icon-76.png in Resources */,
+				D23F91041C5A300400109F89 /* turtle.png in Resources */,
 				D23F90FB1C59AF3100109F89 /* planeB.plist in Resources */,
 				D2BF498E1837469F00CD5A5F /* iTunesArtwork in Resources */,
 				D2BF4B501837475F00CD5A5F /* checkbox_checked.png in Resources */,
@@ -1348,7 +1357,6 @@
 				D2BF4A13183746A000CD5A5F /* CCParticleSystemQuad.m in Sources */,
 				D2BF49D61837469F00CD5A5F /* CCDrawNode.m in Sources */,
 				D2BF4A68183746A000CD5A5F /* CCTransitionPageTurn.m in Sources */,
-				D23F90F41C59AAE900109F89 /* DHPlaneObj.m in Sources */,
 				D2BF49991837469F00CD5A5F /* CCActionCatmullRom.m in Sources */,
 				D2BF4A10183746A000CD5A5F /* CCParticleSystem.m in Sources */,
 				D2BF4A65183746A000CD5A5F /* CCTransition.m in Sources */,
@@ -1358,6 +1366,7 @@
 				D2BF4AFB183746A100CD5A5F /* utility.c in Sources */,
 				D2BF4AA7183746A100CD5A5F /* CCVertex.m in Sources */,
 				D2BF4AAD183746A100CD5A5F /* NSThread+performBlock.m in Sources */,
+				D23F91021C5A2E6F00109F89 /* DHPlaneObj.m in Sources */,
 				D2BF49B41837469F00CD5A5F /* CCActionTiledGrid.m in Sources */,
 				D2BF49FB183746A000CD5A5F /* CCMenuItem.m in Sources */,
 				D2BF49961837469F00CD5A5F /* CCActionCamera.m in Sources */,
@@ -1386,6 +1395,7 @@
 				D2BF4ACB183746A100CD5A5F /* CocosDenshion.m in Sources */,
 				D2BF4A50183746A000CD5A5F /* CCTextureCache.m in Sources */,
 				D2BF4AF3183746A100CD5A5F /* neon_matrix_impl.c in Sources */,
+				D23F91011C5A2E6F00109F89 /* DHHintObj.m in Sources */,
 				D2280BB018BDDE9D005CE1E5 /* DHFreeModeGameLayer.m in Sources */,
 				D2280B9B18BDDE77005CE1E5 /* DHIntroPannelObj.m in Sources */,
 				D2BF4A23183746A000CD5A5F /* CCScene.m in Sources */,
